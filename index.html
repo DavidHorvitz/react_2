@@ -19,15 +19,15 @@
 <script type="text/babel">
     const target = document.getElementById('content');
 
-    function Inigo() {
-return <span>Hello, my name is Inigo Montoya</span>
-}
-function Greeting() {
-return <span>prepare to die!</span>
-}
-function Root() {
-return <span><Inigo />, <Greeting /></span>
-}
+    function Hello() {
+        return <span> Hello, my name is </span>
+    }
+    function Name() {
+        return <span>David</span>
+    }
+    function Root() {
+        return <span><Hello />, <Name /></span>
+    }
 
     ReactDOM.render(
         <div>
